@@ -1,0 +1,30 @@
+.ball {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--color-highlight);
+}
+
+.animation-container {
+  width: 100%;
+}
+
+.select__option {
+  background-color: white !important;
+  color: black !important;
+}
+.select__option--highlight {
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.animation-controls {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.animation-control-container {
+  display: flex;
+}

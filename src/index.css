@@ -1,0 +1,89 @@
+:root {
+  --color-text: #e6e1c5;
+  --color-background-left: #0f0c29;
+  --color-background-right: #24243e;
+  --color-highlight: #dc0073;
+  --color-secondary: #90c2e7;
+
+  --font-size-regular: 16px;
+  --font-size-h1: 67.78px;
+  --font-size-h2: 41.89px;
+  --font-size-h3: 25.89px;
+
+  --spacing: 8px;
+
+  --header-height: 72px;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background-left);
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: var(--color-text);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: calc(var(--spacing) * 2);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+p {
+  text-align: left;
+}
+
+button {
+  padding: var(--spacing);
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-highlight);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 1.5px #48abe0;
+}
+button:active {
+  box-shadow: 0 0 10px 3px #48abe0;
+}
